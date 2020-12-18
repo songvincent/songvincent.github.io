@@ -100,12 +100,12 @@ Song_Shelter = Welcome</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1607965202954&di=800df4a86b42575b74c7d7a0ee7d75d9&imgtype=0&src=http%3A%2F%2Fpic1.zhimg.com%2Fv2-1007c0a34365d9a6b088b0b72a8ac7f4_xs.jpg%3Fsource%3D172ae18b"></li>
           <li class="item" data-background-image="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3749889685,3476273733&fm=11&gp=0.jpg"></li>
-          <li class="item" data-background-image="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1607965083917&di=eed9ff094621172da4510cde463969d3&imgtype=0&src=http%3A%2F%2Fn.sinaimg.cn%2Fsinacn%2F20171110%2Fbd29-fynstfh3728548.jpg"></li>
-          <li class="item" data-background-image="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1607965018175&di=d93a5753243792199aab689197dcfe14&imgtype=0&src=http%3A%2F%2Fwx3.sinaimg.cn%2Fmw690%2F6ff374a1gy1ghixswvq05j21910u0x6x.jpg"></li>
-          <li class="item" data-background-image="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1607965129291&di=10131802ce83eaca0b234244fd71848c&imgtype=0&src=http%3A%2F%2Fytsports.cn%2Fstatic_new%2Fstatic%2Fnewsimage%2F20181228%2F15460038579857.jpg"></li>
           <li class="item" data-background-image="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1607965049187&di=5a51d4ed5419b04219303f4a79576cc7&imgtype=0&src=http%3A%2F%2Fimagecloud.thepaper.cn%2Fthepaper%2Fimage%2F103%2F805%2F438.jpg"></li>
+          <li class="item" data-background-image="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1607965202954&di=800df4a86b42575b74c7d7a0ee7d75d9&imgtype=0&src=http%3A%2F%2Fpic1.zhimg.com%2Fv2-1007c0a34365d9a6b088b0b72a8ac7f4_xs.jpg%3Fsource%3D172ae18b"></li>
+          <li class="item" data-background-image="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1607965129291&di=10131802ce83eaca0b234244fd71848c&imgtype=0&src=http%3A%2F%2Fytsports.cn%2Fstatic_new%2Fstatic%2Fnewsimage%2F20181228%2F15460038579857.jpg"></li>
+          <li class="item" data-background-image="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1607965018175&di=d93a5753243792199aab689197dcfe14&imgtype=0&src=http%3A%2F%2Fwx3.sinaimg.cn%2Fmw690%2F6ff374a1gy1ghixswvq05j21910u0x6x.jpg"></li>
+          <li class="item" data-background-image="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1607965083917&di=eed9ff094621172da4510cde463969d3&imgtype=0&src=http%3A%2F%2Fn.sinaimg.cn%2Fsinacn%2F20171110%2Fbd29-fynstfh3728548.jpg"></li>
         </ul>
       </div>
     </header>
@@ -168,7 +168,7 @@ Song_Shelter = Welcome</title>
 <p>pop()</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">d.pop()  <span class="comment">## 返回值为&#x27;j&#x27;,更新的deque为deque([&#x27;f&#x27;,&#x27;g&#x27;, &#x27;h&#x27;, &#x27;i&#x27;])</span></span><br></pre></td></tr></table></figure>
 
-<p>popleft()</p>
+<p><strong>popleft()</strong></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">d.popleft() <span class="comment">## 返回值为&#x27;f&#x27;,更新的deque为deque([g&#x27;, &#x27;h&#x27;, &#x27;i&#x27;])</span></span><br></pre></td></tr></table></figure>
 
 <p>extend(iter)</p>
@@ -177,20 +177,31 @@ Song_Shelter = Welcome</title>
 <p>extendleft(iter)  (左添加时，在结果中iterable参数中的<strong>顺序将被反过来添加</strong>)</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d.extend(<span class="string">&#x27;abc&#x27;</span>) <span class="comment">## deque([&#x27;c&#x27;, &#x27;b&#x27;, &#x27;a&#x27;, &#x27;g&#x27;, &#x27;h&#x27;, &#x27;i&#x27;, &#x27;j&#x27;, &#x27;k&#x27;, &#x27;l&#x27;])</span></span><br><span class="line"><span class="comment">### 输入参数为 abc 添加后顺序反过来为 c b a</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="未完待续，后续再更"><a href="#未完待续，后续再更" class="headerlink" title="未完待续，后续再更"></a>未完待续，后续再更</h4><p>clear()</p>
-<p>copy()</p>
+<p>index(x[,start[,end]])</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d.index(<span class="string">&#x27;a&#x27;</span>) <span class="comment">## 2 返回第一个匹配元素的索引，如果未找到，抛出ValueError</span></span><br><span class="line"><span class="comment"># d.index(&#x27;a&#x27;,0,3)  ## 返回[0,3) 区间的第一个匹配的元素索引，未找到则同上</span></span><br></pre></td></tr></table></figure>
+
 <p>count(x)</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d.count(<span class="string">&#x27;g&#x27;</span>) </span><br><span class="line"><span class="comment">### 1 返回元素个数</span></span><br></pre></td></tr></table></figure>
 
+<p>insert(i,x)</p>
+<p><font color=red>如果不是很必要，不建议使用该函数，该插入函数会导致底层元素的多次移动，产生一定的移动开销</font></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">d.insert(<span class="number">1</span>,<span class="string">&#x27;c0&#x27;</span>)  <span class="comment">## deque([c&#x27;,&#x27;c0&#x27; ,&#x27;b&#x27;, &#x27;a&#x27;, &#x27;g&#x27;, &#x27;h&#x27;, &#x27;i&#x27;, &#x27;j&#x27;, &#x27;k&#x27;, &#x27;l&#x27;])</span></span><br><span class="line"><span class="comment">## 普通插入。如果有最大长度限制(即maxlen参数被设置)AND插入导致数据元素个数超过最大值</span></span><br><span class="line"><span class="comment">## 抛出indexError</span></span><br></pre></td></tr></table></figure>
 
+<p>remove(value)</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">d.remove(<span class="string">&#x27;c0&#x27;</span>)  <span class="comment">## deque([&#x27;c&#x27;, &#x27;b&#x27;, &#x27;a&#x27;, &#x27;g&#x27;, &#x27;h&#x27;, &#x27;i&#x27;, &#x27;j&#x27;, &#x27;k&#x27;, &#x27;l&#x27;])</span></span><br><span class="line"><span class="comment">### 类似于list中的remove 移除第一个匹配的value</span></span><br><span class="line"><span class="comment">### 若value不存在于d中，抛出ValueError</span></span><br></pre></td></tr></table></figure>
 
-<p>index()</p>
-<p>insert()</p>
-<p>pop()</p>
-<p>popleft()</p>
-<p>remove()</p>
 <p>reverse()</p>
-<p>rotate()</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d.reverse() <span class="comment"># deque([&#x27;l&#x27;, &#x27;k&#x27;, &#x27;j&#x27;, &#x27;i&#x27;, &#x27;h&#x27;, &#x27;g&#x27;, &#x27;a&#x27;, &#x27;b&#x27;, &#x27;c&#x27;])</span></span><br><span class="line"><span class="comment">## 倒转整个deque，该函数属于原地操作，无返回值</span></span><br></pre></td></tr></table></figure>
+
+<p>rotate(n = 1)</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d.rotate(<span class="number">2</span>)  <span class="comment">##deque([&#x27;b&#x27;, &#x27;c&#x27;, &#x27;l&#x27;, &#x27;k&#x27;, &#x27;j&#x27;, &#x27;i&#x27;, &#x27;h&#x27;, &#x27;g&#x27;, &#x27;a&#x27;])</span></span><br><span class="line"><span class="comment"># 循环队列的右移2步，结果如上，也是原地操作，没有返回值</span></span><br></pre></td></tr></table></figure>
+
+<p>clear()</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">d.clear()</span><br><span class="line"><span class="comment">## 清空数据</span></span><br></pre></td></tr></table></figure>
+
+<p>copy()</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">q = d.copy()</span><br><span class="line"><span class="comment">## 类似于python中的浅拷贝，对深浅拷贝的解释可以参考我的另一篇文章</span></span><br></pre></td></tr></table></figure>
+
 
   </div>
 
@@ -202,7 +213,7 @@ Song_Shelter = Welcome</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">Edited on</span>
-    <time title="Modified: 2020-12-18 15:45:16" itemprop="dateModified" datetime="2020-12-18T15:45:16+08:00">2020-12-18</time>
+    <time title="Modified: 2020-12-18 20:26:17" itemprop="dateModified" datetime="2020-12-18T20:26:17+08:00">2020-12-18</time>
   </span>
 </div>
 
@@ -257,7 +268,7 @@ Song_Shelter = Welcome</title>
     <div class="item left">
       
 
-  <a href="/2020/12/15/lc842/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;timgsa.baidu.com&#x2F;timg?image&amp;quality&#x3D;80&amp;size&#x3D;b9999_10000&amp;sec&#x3D;1607965049187&amp;di&#x3D;5a51d4ed5419b04219303f4a79576cc7&amp;imgtype&#x3D;0&amp;src&#x3D;http%3A%2F%2Fimagecloud.thepaper.cn%2Fthepaper%2Fimage%2F103%2F805%2F438.jpg" title="leetcode842">
+  <a href="/2020/12/15/lc842/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;timgsa.baidu.com&#x2F;timg?image&amp;quality&#x3D;80&amp;size&#x3D;b9999_10000&amp;sec&#x3D;1607965202954&amp;di&#x3D;800df4a86b42575b74c7d7a0ee7d75d9&amp;imgtype&#x3D;0&amp;src&#x3D;http%3A%2F%2Fpic1.zhimg.com%2Fv2-1007c0a34365d9a6b088b0b72a8ac7f4_xs.jpg%3Fsource%3D172ae18b" title="leetcode842">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> 力扣</span>
   <h3>leetcode842</h3>
@@ -281,7 +292,7 @@ Song_Shelter = Welcome</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#collections"><span class="toc-number">1.</span> <span class="toc-text">collections</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#deque-%E5%8F%8C%E7%AB%AF%E9%98%9F%E5%88%97"><span class="toc-number">1.0.1.</span> <span class="toc-text">deque(双端队列)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#some-method"><span class="toc-number">1.0.2.</span> <span class="toc-text">some method</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%AA%E5%AE%8C%E5%BE%85%E7%BB%AD%EF%BC%8C%E5%90%8E%E7%BB%AD%E5%86%8D%E6%9B%B4"><span class="toc-number">1.0.3.</span> <span class="toc-text">未完待续，后续再更</span></a></li></ol></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#collections"><span class="toc-number">1.</span> <span class="toc-text">collections</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#deque-%E5%8F%8C%E7%AB%AF%E9%98%9F%E5%88%97"><span class="toc-number">1.0.1.</span> <span class="toc-text">deque(双端队列)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#some-method"><span class="toc-number">1.0.2.</span> <span class="toc-text">some method</span></a></li></ol></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -361,10 +372,9 @@ Song_Shelter = Welcome</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/python/" title="In Python">Python</a>
 </div>
 
-    <span><a href="/2020/12/16/collections/" title="collections">collections</a></span>
+    <span><a href="/2020/11/15/Introduction/" title="Introduction">Introduction</a></span>
   </li>
 
       
@@ -390,9 +400,10 @@ Song_Shelter = Welcome</title>
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/python/" title="In Python">Python</a>
 </div>
 
-    <span><a href="/2020/11/15/Introduction/" title="Introduction">Introduction</a></span>
+    <span><a href="/2020/12/16/collections/" title="collections">collections</a></span>
   </li>
 
   </ul>
