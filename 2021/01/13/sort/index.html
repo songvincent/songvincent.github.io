@@ -101,11 +101,11 @@ Song_Shelter = Welcome</title>
       <div id="imgs" class="pjax">
         <ul>
           <li class="item" data-background-image="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1607965018175&di=d93a5753243792199aab689197dcfe14&imgtype=0&src=http%3A%2F%2Fwx3.sinaimg.cn%2Fmw690%2F6ff374a1gy1ghixswvq05j21910u0x6x.jpg"></li>
-          <li class="item" data-background-image="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1607965129291&di=10131802ce83eaca0b234244fd71848c&imgtype=0&src=http%3A%2F%2Fytsports.cn%2Fstatic_new%2Fstatic%2Fnewsimage%2F20181228%2F15460038579857.jpg"></li>
           <li class="item" data-background-image="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1607965083917&di=eed9ff094621172da4510cde463969d3&imgtype=0&src=http%3A%2F%2Fn.sinaimg.cn%2Fsinacn%2F20171110%2Fbd29-fynstfh3728548.jpg"></li>
           <li class="item" data-background-image="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1607965202954&di=800df4a86b42575b74c7d7a0ee7d75d9&imgtype=0&src=http%3A%2F%2Fpic1.zhimg.com%2Fv2-1007c0a34365d9a6b088b0b72a8ac7f4_xs.jpg%3Fsource%3D172ae18b"></li>
-          <li class="item" data-background-image="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1607965049187&di=5a51d4ed5419b04219303f4a79576cc7&imgtype=0&src=http%3A%2F%2Fimagecloud.thepaper.cn%2Fthepaper%2Fimage%2F103%2F805%2F438.jpg"></li>
           <li class="item" data-background-image="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1607964980322&di=94e6f670ab1f759560367e6bd553efb2&imgtype=0&src=http%3A%2F%2F04imgmini.eastday.com%2Fmobile%2F20201214%2F2020121413_8193b811a000493fbd15bb424df06274_1882_wmk.jpg"></li>
+          <li class="item" data-background-image="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1607965049187&di=5a51d4ed5419b04219303f4a79576cc7&imgtype=0&src=http%3A%2F%2Fimagecloud.thepaper.cn%2Fthepaper%2Fimage%2F103%2F805%2F438.jpg"></li>
+          <li class="item" data-background-image="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1607965129291&di=10131802ce83eaca0b234244fd71848c&imgtype=0&src=http%3A%2F%2Fytsports.cn%2Fstatic_new%2Fstatic%2Fnewsimage%2F20181228%2F15460038579857.jpg"></li>
         </ul>
       </div>
     </header>
@@ -166,9 +166,15 @@ Song_Shelter = Welcome</title>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">### 默认情况下reverse = False</span></span><br><span class="line">a = [<span class="number">14</span>,<span class="number">27</span>,<span class="number">23</span>]</span><br><span class="line">a.sort()</span><br><span class="line">print(a) <span class="comment">### [14,23,27]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## reverse = True  降序</span></span><br><span class="line">a = [<span class="number">14</span>,<span class="number">27</span>,<span class="number">23</span>]</span><br><span class="line">a.sort(reverse=<span class="literal">True</span>)</span><br><span class="line">print(a)  <span class="comment">##[27, 23, 14]</span></span><br></pre></td></tr></table></figure>
 
 <p>其次对 <strong>key</strong> 关键字进行分析，key 取值一般为 <em>函数</em> ，挑选特定的列进行比较</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">a = [(<span class="number">14</span>,<span class="number">7</span>),(<span class="number">27</span>,<span class="number">6</span>),(<span class="number">23</span>,<span class="number">5</span>)]</span><br><span class="line"></span><br><span class="line"><span class="comment">### 默认情况下，按照每一个元素的起始元素进行排列</span></span><br><span class="line"><span class="comment">### 若要降序直接更改reverse参数</span></span><br><span class="line">a.sort()</span><br><span class="line">print(a)  <span class="comment">## [(14, 7), (23, 5), (27, 6)]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">### 按第二个元素升序排列</span></span><br><span class="line">a = [(<span class="number">14</span>,<span class="number">7</span>),(<span class="number">27</span>,<span class="number">6</span>),(<span class="number">23</span>,<span class="number">5</span>)]</span><br><span class="line">a.sort(key = <span class="keyword">lambda</span> x: x[<span class="number">1</span>])</span><br><span class="line">print(a)  <span class="comment">## [(23, 5), (27, 6), (14, 7)]</span></span><br><span class="line"><span class="comment">### 通过key参数 提取待排序列表中元素的第二位置值，通过该值的大小完成排序 即 5，6，7</span></span><br><span class="line"></span><br><span class="line"><span class="comment">### key可以同时加入两个元素，但必须是一个参数</span></span><br><span class="line"><span class="comment">### 先按照第一个元素升序，第一个元素相等按第二个元素升序进行排列</span></span><br><span class="line">a = [(<span class="number">14</span>,<span class="number">7</span>),(<span class="number">14</span>,<span class="number">6</span>),(<span class="number">23</span>,<span class="number">5</span>)]</span><br><span class="line">a.sort(key=<span class="keyword">lambda</span> x:(x[<span class="number">0</span>],x[<span class="number">1</span>])) <span class="comment">## 必须用括号括起来，传入一个参数</span></span><br><span class="line">print(a)  <span class="comment">##[(14, 6), (14, 7), (23, 5)]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">### 先按照第一个元素升序，第一个元素相等按第二个元素 降序 进行排列</span></span><br><span class="line"><span class="comment">### 降序可以通过在参数前加 负号 实现 </span></span><br><span class="line">a = [(<span class="number">14</span>,<span class="number">7</span>),(<span class="number">14</span>,<span class="number">6</span>),(<span class="number">23</span>,<span class="number">5</span>)]</span><br><span class="line">a.sort(key=<span class="keyword">lambda</span> x:(x[<span class="number">0</span>],-x[<span class="number">1</span>])) </span><br><span class="line">print(a)  <span class="comment">## [(14, 7), (14, 6), (23, 5)]</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">a = [(<span class="number">14</span>,<span class="number">7</span>),(<span class="number">27</span>,<span class="number">6</span>),(<span class="number">23</span>,<span class="number">5</span>)]</span><br><span class="line"></span><br><span class="line"><span class="comment">### 默认情况下，按照每一个元素的起始元素进行排列</span></span><br><span class="line"><span class="comment">### 若要降序直接更改reverse参数</span></span><br><span class="line">a.sort()</span><br><span class="line">print(a)  <span class="comment">## [(14, 7), (23, 5), (27, 6)]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">### 按第二个元素升序排列</span></span><br><span class="line">a = [(<span class="number">14</span>,<span class="number">7</span>),(<span class="number">27</span>,<span class="number">6</span>),(<span class="number">23</span>,<span class="number">5</span>)]</span><br><span class="line">a.sort(key = <span class="keyword">lambda</span> x: x[<span class="number">1</span>])</span><br><span class="line">print(a)  <span class="comment">## [(23, 5), (27, 6), (14, 7)]</span></span><br><span class="line"><span class="comment">### 通过key参数 提取待排序列表中元素的第二位置值，通过该值的大小完成排序 即 5，6，7</span></span><br><span class="line"></span><br><span class="line"><span class="comment">### key可以同时加入两个元素，但必须是一个参数</span></span><br><span class="line"><span class="comment">### 先按照第一个元素升序，第一个元素相等按第二个元素升序进行排列</span></span><br><span class="line">a = [(<span class="number">14</span>,<span class="number">7</span>),(<span class="number">14</span>,<span class="number">6</span>),(<span class="number">23</span>,<span class="number">5</span>)]</span><br><span class="line">a.sort(key=<span class="keyword">lambda</span> x:(x[<span class="number">0</span>],x[<span class="number">1</span>])) <span class="comment">## 必须用括号括起来，传入一个参数</span></span><br><span class="line">print(a)  <span class="comment">##[(14, 6), (14, 7), (23, 5)]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">### 先按照第一个元素升序，第一个元素相等按第二个元素 降序 进行排列</span></span><br><span class="line"><span class="comment">### 降序可以通过在参数前加 负号 实现 </span></span><br><span class="line">a = [(<span class="number">14</span>,<span class="number">7</span>),(<span class="number">14</span>,<span class="number">6</span>),(<span class="number">23</span>,<span class="number">5</span>)]</span><br><span class="line">a.sort(key=<span class="keyword">lambda</span> x:(x[<span class="number">0</span>],-x[<span class="number">1</span>])) </span><br><span class="line">print(a)  <span class="comment">## [(14, 7), (14, 6), (23, 5)]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">### 也可以进行元素间的计算</span></span><br><span class="line"><span class="comment">### 按和进行计算</span></span><br><span class="line">a = [(<span class="number">14</span>,<span class="number">7</span>),(<span class="number">14</span>,<span class="number">6</span>),(<span class="number">23</span>,<span class="number">5</span>)]</span><br><span class="line">a.sort(key=<span class="keyword">lambda</span> x:(x[<span class="number">0</span>]+x[<span class="number">1</span>])) </span><br><span class="line">print(a)  <span class="comment">## [(14, 6), (14, 7), (23, 5)]</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<h4 id="自定义比较"><a href="#自定义比较" class="headerlink" title="自定义比较"></a>自定义比较</h4><h2 id="https-www-cnblogs-com-r1-12king-p-13201769-html"><a href="#https-www-cnblogs-com-r1-12king-p-13201769-html" class="headerlink" title="https://www.cnblogs.com/r1-12king/p/13201769.html"></a><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vcjEtMTJraW5nL3AvMTMyMDE3NjkuaHRtbA==">https://www.cnblogs.com/r1-12king/p/13201769.html</span></h2>
+<h4 id="自定义比较"><a href="#自定义比较" class="headerlink" title="自定义比较"></a>自定义比较</h4><p>对于 <strong>非纯数字</strong> 的序列，如果需要对第一个元素进行升序排列，在第一个元素相等时进行降序排列，需要自定义比较函数，举例如下</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> functools <span class="keyword">import</span> cmp_to_key</span><br><span class="line"></span><br><span class="line">a = [(<span class="number">14</span>,<span class="string">&#x27;c&#x27;</span>),(<span class="number">14</span>,<span class="string">&#x27;b&#x27;</span>),(<span class="number">23</span>,<span class="string">&#x27;a&#x27;</span>)]</span><br><span class="line"></span><br><span class="line"><span class="comment">### 对a序列定义一种排序规则，首先根据第一个元素升序排列</span></span><br><span class="line"><span class="comment">### 若第一个元素相同，则按第二个元素进行降序排列</span></span><br><span class="line"><span class="comment">## a.sort(key = lambda x:(x[0],-x[1])) 使用时就会出错，因为第二个元素为字符串，不可以加负号</span></span><br><span class="line"><span class="comment">## 此时就需要用到自定义排序方法</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">compare</span>(<span class="params">elem1,elem2</span>):</span></span><br><span class="line">    <span class="keyword">if</span> elem1[<span class="number">0</span>] &lt; elem2[<span class="number">0</span>]:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span></span><br><span class="line">    <span class="keyword">elif</span> elem[<span class="number">0</span>] &gt; elem2[<span class="number">0</span>]:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">if</span> elem1[<span class="number">1</span>]&lt;elem2[<span class="number">1</span>]:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">        <span class="keyword">elif</span> elem1[<span class="number">1</span>] &gt; elem2[<span class="number">1</span>]:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">-1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line"></span><br><span class="line">a.sort(key = cmp_to_key(compare))</span><br><span class="line">print(a)  <span class="comment">### [(14, &#x27;c&#x27;), (14, &#x27;b&#x27;), (23, &#x27;a&#x27;)]</span></span><br></pre></td></tr></table></figure>
+
+<p>由于python3中sort函数除去cmp参数，无法自定义排序规则，所以使用内置的函数(cmp_to_key)，将cmp函数转化为key的值，从而实现自定义的排序。</p>
+<h4 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h4><p>其内部排序实现方法是<strong>Timesort</strong> 。Timesort结合了归并排序与插入排序，从而实现了对归并排序的优化，提高了排序速度。</p>
+<p>其详情可见<span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vY2xlbWVudC1qaWFvL3AvOTI0MzA2Ni5odG1s">python sort函数内部实现原理</span> 。</p>
+
   </div>
 
    <footer>
@@ -179,7 +185,7 @@ Song_Shelter = Welcome</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">Edited on</span>
-    <time title="Modified: 2021-01-13 22:53:48" itemprop="dateModified" datetime="2021-01-13T22:53:48+08:00">2021-01-13</time>
+    <time title="Modified: 2021-01-15 21:41:39" itemprop="dateModified" datetime="2021-01-15T21:41:39+08:00">2021-01-15</time>
   </span>
 </div>
 
@@ -234,7 +240,7 @@ Song_Shelter = Welcome</title>
     <div class="item left">
       
 
-  <a href="/2020/12/21/MonotoneStack/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;timgsa.baidu.com&#x2F;timg?image&amp;quality&#x3D;80&amp;size&#x3D;b9999_10000&amp;sec&#x3D;1607965049187&amp;di&#x3D;5a51d4ed5419b04219303f4a79576cc7&amp;imgtype&#x3D;0&amp;src&#x3D;http%3A%2F%2Fimagecloud.thepaper.cn%2Fthepaper%2Fimage%2F103%2F805%2F438.jpg" title="Monotone_Stack_leetcode">
+  <a href="/2020/12/21/MonotoneStack/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;timgsa.baidu.com&#x2F;timg?image&amp;quality&#x3D;80&amp;size&#x3D;b9999_10000&amp;sec&#x3D;1607965129291&amp;di&#x3D;10131802ce83eaca0b234244fd71848c&amp;imgtype&#x3D;0&amp;src&#x3D;http%3A%2F%2Fytsports.cn%2Fstatic_new%2Fstatic%2Fnewsimage%2F20181228%2F15460038579857.jpg" title="Monotone_Stack_leetcode">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> 力扣</span>
   <h3>Monotone_Stack_leetcode</h3>
@@ -258,7 +264,7 @@ Song_Shelter = Welcome</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Sort"><span class="toc-number">1.</span> <span class="toc-text">Sort</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#sort%E4%B8%8Esorted%E5%8C%BA%E5%88%AB"><span class="toc-number">1.0.1.</span> <span class="toc-text">sort与sorted区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%82%E6%95%B0%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.0.2.</span> <span class="toc-text">参数介绍</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%AF%94%E8%BE%83"><span class="toc-number">1.0.3.</span> <span class="toc-text">自定义比较</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#https-www-cnblogs-com-r1-12king-p-13201769-html"><span class="toc-number">2.</span> <span class="toc-text">https:&#x2F;&#x2F;www.cnblogs.com&#x2F;r1-12king&#x2F;p&#x2F;13201769.html</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Sort"><span class="toc-number">1.</span> <span class="toc-text">Sort</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#sort%E4%B8%8Esorted%E5%8C%BA%E5%88%AB"><span class="toc-number">1.0.1.</span> <span class="toc-text">sort与sorted区别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%82%E6%95%B0%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.0.2.</span> <span class="toc-text">参数介绍</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%AF%94%E8%BE%83"><span class="toc-number">1.0.3.</span> <span class="toc-text">自定义比较</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8E%9F%E7%90%86"><span class="toc-number">1.0.4.</span> <span class="toc-text">原理</span></a></li></ol></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -341,17 +347,16 @@ Song_Shelter = Welcome</title>
 <a href="/categories/python/" title="In Python">Python</a>
 </div>
 
-    <span><a href="/2021/01/13/sort/" title="sort">sort</a></span>
+    <span><a href="/2020/12/16/collections/" title="collections">collections</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/leetcode/" title="In 力扣">力扣</a>
 </div>
 
-    <span><a href="/2020/12/21/MonotoneStack/" title="Monotone_Stack_leetcode">Monotone_Stack_leetcode</a></span>
+    <span><a href="/2020/11/05/hello-world/" title="Hello World">Hello World</a></span>
   </li>
 
       
@@ -370,16 +375,7 @@ Song_Shelter = Welcome</title>
 <a href="/categories/leetcode/" title="In 力扣">力扣</a>
 </div>
 
-    <span><a href="/2020/12/15/lc842/" title="leetcode842">leetcode842</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2020/11/05/hello-world/" title="Hello World">Hello World</a></span>
+    <span><a href="/2020/12/21/MonotoneStack/" title="Monotone_Stack_leetcode">Monotone_Stack_leetcode</a></span>
   </li>
 
       
@@ -389,7 +385,17 @@ Song_Shelter = Welcome</title>
 <a href="/categories/python/" title="In Python">Python</a>
 </div>
 
-    <span><a href="/2020/12/16/collections/" title="collections">collections</a></span>
+    <span><a href="/2021/01/13/sort/" title="sort">sort</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/leetcode/" title="In 力扣">力扣</a>
+</div>
+
+    <span><a href="/2020/12/15/lc842/" title="leetcode842">leetcode842</a></span>
   </li>
 
   </ul>
